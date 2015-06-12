@@ -1,0 +1,14 @@
+{
+  "name": "async_tools",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["async"],
+  "description": "async tools",
+  "contributors": ["francescoagati"],
+  "releasenote": "first release",
+  "version": "0.1.1",
+  "url": "https://github.com/francescoagati/async_tools.hx",
+  "dependencies": {
+    "continuation": ""
+  }
+}

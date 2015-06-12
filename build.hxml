@@ -1,0 +1,6 @@
+-js bin/async.js
+-cp src
+-lib continuation
+-main async_tools.Main
+-dce full
+-D analyzer
