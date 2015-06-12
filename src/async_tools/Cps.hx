@@ -7,6 +7,9 @@ package async_tools;
 
 class Cps {
 
+  public static inline function wait(n:Int,cb:Void->Void) untyped setTimeout(cb,n);
+
+
   public macro static function cont(body:Expr) {
     var md5 =  haxe.crypto.Md5.encode(Std.string(Date.now().getTime()));
     var randomName = '__fn_tmp_${Std.string(Math.random() * 99999999).replace(".","_")}_${md5}';

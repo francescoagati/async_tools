@@ -6,10 +6,9 @@ using async_tools.Sync2Async;
 
 class Main implements Async {
 
-  public inline static function sum(a,b,cb) {
-    haxe.Timer.delay(function() {
-      cb(a+b);
-    },2000);
+  @:async public inline static function sum(a,b) {
+    @await wait(2000);
+    return a+b;
   }
 
   static function main() {
