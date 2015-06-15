@@ -8,7 +8,7 @@ using StringTools;
 
 class Sync2Async {
 
-  public macro static function async(o:ExprOf<Dynamic>,?params:Int = 1) {
+  public macro static function to_async(o:ExprOf<Dynamic>,?params:Int = 1) {
 
     inline function params0(fnName:String) {
       return macro  {
