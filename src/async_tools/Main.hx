@@ -12,7 +12,7 @@ class Main implements Async {
   }
 
   static function main() {
-
+/*
     cont_exec({
         var a = untyped __js__('1');
         var b = untyped __js__('2');
@@ -46,6 +46,6 @@ class Main implements Async {
       var x3 = @await callable.pippo.async(3)("x","y","z");
       var x4 = @await callable.pippo.async(4)("x","y","z","k");
     });
-
+*/
   }
 }

@@ -7,6 +7,13 @@ package async_tools;
 
 class Cps {
 
+  public static inline function rq(fn:Void->Void,next:Void->Void) {
+     untyped window.requestAnimationFrame(function() {
+       fn();
+       next();
+     });
+   }
+
   public static inline function wait(n:Int,cb:Void->Void) untyped setTimeout(cb,n);
 
 
