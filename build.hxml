@@ -1,6 +1,6 @@
 -js bin/async.js
 -cp src
--lib continuation
+-lib continuation promhx promhx_tools
 -main async_tools.Main
 -dce full
 -D analyzer
