@@ -2,6 +2,7 @@ package async_tools;
 
 import async_tools.Async;
 import async_tools.Cps.*;
+import async_tools.Stream.*;
 using async_tools.Sync2Async;
 
 class Main implements Async {
