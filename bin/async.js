@@ -11,6 +11,9 @@ var async_$tools_Async = function() { };
 var async_$tools_Main = function() { };
 async_$tools_Main.__interfaces__ = [async_$tools_Async];
 async_$tools_Main.main = function() {
+	window.requestAnimationFrame(function(i) {
+		console.log("pippa");
+	});
 };
 function $iterator(o) { if( o instanceof Array ) return function() { return HxOverrides.iter(o); }; return typeof(o.iterator) == 'function' ? $bind(o,o.iterator) : o.iterator; }
 var $_, $fid = 0;

@@ -16,6 +16,13 @@ class Cps {
      });
    }
 
+  public static macro function next_frame(expr:Expr) {
+    return macro js.Browser.window.requestAnimationFrame(function(i) {
+      $expr;
+    });
+  }
+
+
   public static inline function wait(n:Int,cb:Void->Void) untyped setTimeout(cb,n);
 
 

@@ -13,6 +13,10 @@ class Main implements Async {
   }
 
   static function main() {
+
+    next_frame(trace('pippa'));
+
+
 /*
     cont_exec({
         var a = untyped __js__('1');
